@@ -1,0 +1,41 @@
+<mxfile host="65bd71144e">
+    <diagram name="DFD Domains" id="dfd_domains">
+        <mxGraphModel dx="941" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="p1" value="Clinic Domain &#xa;(appointment, patient info)" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="70" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2" value="FinTech Domain &#xa;(accounting, loans)" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="220" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3" value="AI/Analytics Domain&#xa; (model training)" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="360" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="ds" value="Data Platform&#xa; (schema per domain)" style="shape=database;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="200" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="portal" value="Self-Service Portal (UI)" style="rounded=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="220" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="p1" target="ds" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                    <mxCell id="0.5.-1" value="Clinic data" style="html=1;align=center;" parent="e1" as="label"/>
+                </mxCell>
+                <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="p2" target="ds" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                    <mxCell id="0.6.-1" value="Finance data" style="html=1;align=center;" parent="e2" as="label"/>
+                </mxCell>
+                <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="p3" target="ds" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                    <mxCell id="0.7.-1" value="Model outputs" style="html=1;align=center;" parent="e3" as="label"/>
+                </mxCell>
+                <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="ds" target="portal" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                    <mxCell id="0.8.-1" value="Conformed data" style="html=1;align=center;" parent="e4" as="label"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
